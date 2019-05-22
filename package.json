@@ -2,6 +2,7 @@
   "name": "@osdevisnot/prettier-config",
   "version": "0.0.1",
   "description": "My personal Prettier config",
+  "repository": "https://github.com/osdevisnot/prettier-config.git",
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "main": "index.json",
