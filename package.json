@@ -6,6 +6,16 @@
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "main": "index.json",
+  "scripts": {
+    "presetup": "git clean -fdX",
+    "setup": "npm install",
+    "prepub": "npm run setup",
+    "pub": "npm version patch",
+    "postpub": "npm publish"
+  },
+  "dependencies": {
+    "prettier": "latest"
+  },
   "publishConfig": {
     "access": "public"
   }
