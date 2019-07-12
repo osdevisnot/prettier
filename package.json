@@ -1,12 +1,13 @@
 {
-  "name": "@osdevisnot/prettier-config",
+  "name": "@osdevisnot/prettier",
   "version": "0.0.4",
   "description": "My personal Prettier config",
-  "repository": "https://github.com/osdevisnot/prettier-config.git",
+  "repository": "https://github.com/osdevisnot/prettier.git",
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "main": "index.json",
   "scripts": {
+    "postinstall": "node setup.js",
     "prepub": "npm run setup",
     "pub": "npm version patch",
     "postpub": "npm publish && git push --follow-tags",
