@@ -7,7 +7,6 @@
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "main": "index.json",
   "scripts": {
-    "postinstall": "node setup.js",
     "prepub": "npm run setup",
     "pub": "npm version patch",
     "postpub": "npm publish && git push --follow-tags",
