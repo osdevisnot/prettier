@@ -1,22 +1,29 @@
 {
-  "name": "@osdevisnot/prettier",
-  "version": "0.2.4",
-  "description": "My personal Prettier config",
-  "repository": "https://github.com/osdevisnot/prettier.git",
-  "license": "MIT",
-  "author": "osdevisnot <osdevisnot@gmail.com>",
-  "main": "index.json",
-  "scripts": {
-    "prepub": "npm run setup",
-    "pub": "npm version patch",
-    "postpub": "npm publish && git push --follow-tags",
-    "presetup": "git clean -fdX",
-    "setup": "npm install"
-  },
-  "dependencies": {
-    "prettier": "latest"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@osdevisnot/prettier",
+	"version": "0.2.5",
+	"description": "My personal Prettier config",
+	"repository": "https://github.com/osdevisnot/prettier.git",
+	"license": "MIT",
+	"author": "osdevisnot <osdevisnot@gmail.com>",
+	"main": "index.json",
+	"scripts": {
+		"postinstall": "node dist/index.js",
+		"prepare": "ncc build postinstall.js --minify",
+		"prepub": "npm run setup",
+		"pub": "npm version patch",
+		"postpub": "npm publish && git push --follow-tags",
+		"presetup": "git clean -fdX",
+		"setup": "npm install"
+	},
+	"prettier": "@osdevisnot/prettier",
+	"dependencies": {
+		"prettier": "*"
+	},
+	"devDependencies": {
+		"@zeit/ncc": "0.20.5",
+		"sort-package-json": "1.23.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
