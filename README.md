@@ -1,4 +1,4 @@
-# `@osdevisnot/prettier`
+# @osdevisnot/prettier
 
 > My personal [Prettier](https://prettier.io) config.
 
@@ -10,11 +10,4 @@
 $ yarn add --dev @osdevisnot/prettier
 ```
 
-**Edit `package.json`**:
-
-```jsonc
-{
-  // ...
-  "prettier": "@osdevisnot/prettier"
-}
-```
+This wil install the configuration and point `prettier` property in your `package.json` to use defaults from `@osdevisnot/prettier`
