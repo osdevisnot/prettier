@@ -4,7 +4,7 @@ const sort = require("sort-package-json");
 const { name } = require("./package.json");
 
 try {
-  const target = join(process.cwd(), "package.json");
+  const target = join(process.cwd(), "..", "..", "package.json");
   const pkg = JSON.parse(fs.readFileSync(target, "utf-8"));
   console.log("TCL: pkg", pkg);
   if (typeof pkg.prettier === "undefined") {
@@ -12,5 +12,5 @@ try {
     fs.writeFileSync(target, JSON.stringify(sort(pkg), null, "	"), "utf-8");
   }
 } catch (e) {
-  console.log(e);
+  console.error(e);
 }

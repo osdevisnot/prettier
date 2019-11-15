@@ -7,14 +7,14 @@
 	"author": "osdevisnot <osdevisnot@gmail.com>",
 	"main": "index.json",
 	"scripts": {
+		"build": "ncc build postinstall.js --minify",
 		"postinstall": "node dist/index.js",
-		"prepare": "ncc build postinstall.js --minify",
 		"prepub": "npm run setup",
-		"pub": "rm -rf dist/package.json && npm version patch",
+		"pub": "npm version patch",
 		"postpub": "npm publish && git push --follow-tags",
 		"presetup": "git clean -fdX",
-		"setup": "npm install",
-		"postsetup": "rm -rf dist/package.json"
+		"setup": "npm install --ignore-scripts",
+		"postsetup": "npm run build"
 	},
 	"prettier": "@osdevisnot/prettier",
 	"dependencies": {
