@@ -13,7 +13,6 @@ try {
   }
   for (let file of [".prettierrc", "prettier.config.js"]) {
     target = join(root, file);
-    console.log("TCL: target", target);
     if (existsSync(target)) unlinkSync(target);
   }
 } catch (e) {}
