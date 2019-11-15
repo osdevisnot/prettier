@@ -10,7 +10,7 @@
 		"postinstall": "node dist/index.js",
 		"prepare": "ncc build postinstall.js --minify",
 		"prepub": "npm run setup",
-		"pub": "npm version patch",
+		"pub": "rm -rf dist/package.json && npm version patch",
 		"postpub": "npm publish && git push --follow-tags",
 		"presetup": "git clean -fdX",
 		"setup": "npm install",
