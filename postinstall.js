@@ -1,5 +1,5 @@
 let { join } = require("path");
-let { readFileSync, writeFileSync, unlinkSync } = require("fs");
+let { readFileSync, writeFileSync, unlinkSync, existsSync } = require("fs");
 let sort = require("sort-package-json");
 let { name } = require("./package.json");
 
@@ -14,6 +14,6 @@ try {
   for (let file of [".prettierrc", "prettier.config.js"]) {
     target = join(root, file);
     console.log("TCL: target", target);
-    if (fs.existsSync(target)) unlinkSync(target);
+    if (existsSync(target)) unlinkSync(target);
   }
 } catch (e) {}
