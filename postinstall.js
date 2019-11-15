@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const fs = require("fs");
 const sort = require("sort-package-json");
 const { name } = require("./package.json");
