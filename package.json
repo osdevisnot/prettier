@@ -13,7 +13,8 @@
 		"pub": "npm version patch",
 		"postpub": "npm publish && git push --follow-tags",
 		"presetup": "git clean -fdX",
-		"setup": "npm install"
+		"setup": "npm install",
+		"postsetup": "rm -rf dist/package.json"
 	},
 	"prettier": "@osdevisnot/prettier",
 	"dependencies": {
