@@ -5,6 +5,9 @@
 	"repository": "https://github.com/osdevisnot/prettier.git",
 	"license": "MIT",
 	"author": "osdevisnot <osdevisnot@gmail.com>",
+	"files": [
+		"dist"
+	],
 	"main": "index.json",
 	"scripts": {
 		"build": "ncc build postinstall.js --minify",
