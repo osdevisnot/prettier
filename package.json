@@ -13,7 +13,7 @@
 		"build": "ncc build postinstall.js --minify",
 		"postinstall": "node dist/index.js",
 		"prepub": "npm run setup",
-		"pub": "npm version patch",
+		"pub": "npm version",
 		"postpub": "npm publish && git push --follow-tags",
 		"presetup": "git clean -fdX",
 		"setup": "npm install --ignore-scripts",
