@@ -1,6 +1,6 @@
 {
 	"name": "@osdevisnot/prettier",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "My personal Prettier config",
 	"repository": "https://github.com/osdevisnot/prettier.git",
 	"license": "MIT",
