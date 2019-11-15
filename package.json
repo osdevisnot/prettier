@@ -19,7 +19,7 @@
 		"setup": "npm install --ignore-scripts",
 		"postsetup": "npm run build"
 	},
-	"prettier": "@osdevisnot/prettier",
+	"prettier": "./index.json",
 	"dependencies": {
 		"prettier": "*"
 	},
