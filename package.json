@@ -1,6 +1,6 @@
 {
   "name": "@osdevisnot/prettier",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Sensible Code Formatting Setup in **One Command**",
   "repository": "https://github.com/osdevisnot/prettier.git",
   "license": "MIT",
