@@ -21,11 +21,12 @@
   },
   "prettier": "./index.json",
   "dependencies": {
-    "prettier": "*"
+    "prettier": "*",
+    "prettier-plugin-packagejson": "*"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.21.0",
-    "sort-package-json": "1.39.1"
+    "@zeit/ncc": "0.22.1",
+    "sort-package-json": "1.41.0"
   },
   "publishConfig": {
     "access": "public"
