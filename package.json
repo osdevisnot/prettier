@@ -5,10 +5,10 @@
   "repository": "https://github.com/osdevisnot/prettier.git",
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
+  "main": "index.json",
   "files": [
     "dist"
   ],
-  "main": "index.json",
   "scripts": {
     "build": "ncc build postinstall.js --minify",
     "postinstall": "node dist/index.js",
@@ -21,6 +21,8 @@
   },
   "prettier": "./index.json",
   "dependencies": {
+    "husky": "*",
+    "precise-commits": "*",
     "prettier": "*",
     "prettier-plugin-packagejson": "*"
   },
