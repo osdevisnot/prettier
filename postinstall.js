@@ -17,6 +17,13 @@ try {
     pkg.husky = { hooks: { 'pre-commit': 'precise-commits' } };
     modified = true;
   }
+  if (typeof pkg.scripts === 'undefined') {
+    pkg.scripts = {};
+  }
+  if (typeof pkg.scripts.postinstall === 'undefined') {
+    pkg.scripts.postinstall = 'sort-package-json';
+    modified = true;
+  }
 
   if (modified) {
     writeFileSync(target, JSON.stringify(sort(pkg), null, '	') + '\n', 'utf-8');

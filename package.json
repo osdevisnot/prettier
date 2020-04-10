@@ -24,7 +24,7 @@
     "husky": "*",
     "precise-commits": "*",
     "prettier": "*",
-    "prettier-plugin-packagejson": "*"
+    "sort-package-json": "*"
   },
   "devDependencies": {
     "@zeit/ncc": "0.22.1",
