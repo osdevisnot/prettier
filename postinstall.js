@@ -14,14 +14,7 @@ try {
     modified = true;
   }
   if (typeof pkg.husky === 'undefined') {
-    pkg.husky = { hooks: { 'pre-commit': 'precise-commits' } };
-    modified = true;
-  }
-  if (typeof pkg.scripts === 'undefined') {
-    pkg.scripts = {};
-  }
-  if (typeof pkg.scripts.postinstall === 'undefined') {
-    pkg.scripts.postinstall = 'sort-package-json';
+    pkg.husky = { hooks: { 'pre-commit': 'pretty-quick --staged' } };
     modified = true;
   }
 

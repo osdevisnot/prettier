@@ -22,9 +22,9 @@
   "prettier": "./index.json",
   "dependencies": {
     "husky": "*",
-    "precise-commits": "*",
+    "pretty-quick": "*",
     "prettier": "*",
-    "sort-package-json": "*"
+    "prettier-plugin-packagejson": "*"
   },
   "devDependencies": {
     "@zeit/ncc": "0.22.1",
