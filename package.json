@@ -5,7 +5,6 @@
   "repository": "https://github.com/osdevisnot/prettier.git",
   "license": "MIT",
   "author": "osdevisnot <osdevisnot@gmail.com>",
-  "main": "index.json",
   "files": [
     "dist"
   ],
@@ -19,16 +18,21 @@
     "setup": "npm install --ignore-scripts",
     "postsetup": "npm run build"
   },
-  "prettier": "./index.json",
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": true
+  },
   "dependencies": {
     "husky": "*",
-    "pretty-quick": "*",
     "prettier": "*",
-    "prettier-plugin-packagejson": "*"
+    "prettier-plugin-packagejson": "*",
+    "pretty-quick": "*"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.22.1",
-    "sort-package-json": "1.42.2"
+    "@zeit/ncc": "0.22.3",
+    "sort-package-json": "1.44.0"
   },
   "publishConfig": {
     "access": "public"
